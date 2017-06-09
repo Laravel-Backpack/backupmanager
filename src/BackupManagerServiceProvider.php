@@ -61,7 +61,7 @@ class BackupManagerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if(!Config::get('backpack.base.skip_all_backpack_routes')){
+        if(!config('backpack.base.skip_all_backpack_routes',false)){
             $this->setupRoutes($this->app->router);            
         }
 
