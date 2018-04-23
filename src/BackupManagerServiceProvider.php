@@ -38,6 +38,10 @@ class BackupManagerServiceProvider extends ServiceProvider
         $this->loadViewsFrom(resource_path('views/vendor/backpack/backupmanager'), 'backupmanager');
         // - then the stock views that come with the package, in case a published view might be missing
         $this->loadViewsFrom(realpath(__DIR__.'/resources/views'), 'backupmanager');
+        
+        // load translation
+        $this->loadTranslationsFrom(resource_path('lang/vendor/backpack'), 'backpack');
+        $this->loadTranslationsFrom(realpath(__DIR__.'/resources/lang'), 'backpack');
 
         // publish config file
         $this->publishes([__DIR__.'/config/backup.php' => config_path('backup.php')], 'config');
