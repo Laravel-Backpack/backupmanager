@@ -54,8 +54,7 @@ class BackupController extends Controller
         $message = 'success';
 
         try {
-
-            foreach(config('backup.backup.ini_settings') as $setting => $value) {
+            foreach (config('backup.backup.ini_settings') as $setting => $value) {
                 ini_set($setting, $value);
             }
 
