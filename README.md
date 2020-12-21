@@ -11,6 +11,7 @@
 An admin interface for [spatie/laravel-backup](https://github.com/spatie/laravel-backup). Allows the admin to easily manage backups (download and delete). Used in the Backpack package, on Laravel 5.2+ to 6.
 
 
+
 > ### Security updates and breaking changes
 > Please **[subscribe to the Backpack Newsletter](http://backpackforlaravel.com/newsletter)** so you can find out about any security updates, breaking changes or major features. We send an email every 1-2 months.
 ![Backpack\BackupManager screenshot](https://backpackforlaravel.com/uploads/screenshots/backups_running.png)
